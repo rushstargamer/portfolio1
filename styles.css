@@ -1,0 +1,149 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* rest of your styles... */
+}
+
+nav h1, h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.scrolling-image.top {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 300px; /* adjust height if needed */
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.scrolling-image.top img {
+  height: 50%;
+  width: auto;
+  min-width: 100%;
+  animation: scroll 5s linear infinite;
+  opacity: 0.5; /* 👈 this controls transparency */
+}
+
+.scrolling-image.bottom img {
+  animation-direction: reverse;
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Push page content down to avoid overlap */
+body {
+  padding-top: 100px;
+}
+
+
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background gradient */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  color: #0277bd;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0277bd;
+  font-weight: bold;
+}
+
+/* Section styles */
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #01579b;
+}
+
+/* Project card example */
+.project {
+  margin-top: 10px;
+}
+
+/* Contact form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #0288d1;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0277bd;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #555;
+}
